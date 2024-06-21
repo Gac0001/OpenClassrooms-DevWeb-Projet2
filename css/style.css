@@ -23,6 +23,11 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 35px;
+
 }
 
 a {
@@ -35,12 +40,7 @@ a {
     font-size: 22px;
 }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
+
 
 .card img {
     object-fit: cover;
@@ -58,11 +58,90 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+
+/******** Header *************/
+
+/*l'ensemble de l'entete*/
+header{
+    display:flex;
+    justify-content: space-between;
+}/*fin*/
+
+/*bloc de logo*/
+#logo_booki{
+    width: 190px;
+    height: 79px;
+    padding: 30px 50px 30px 50px;
+}/*fin*/
+
+
+/*logo*/
+#logo_booki img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 19px;
+}/*fin*/
+
+/* bloc de menu de navigation*/
+header ul{
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+    padding: 10px 0px 10px 0px;
 }
+
+header ul li{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    
+}
+
+header ul li a:hover{
+    border-top: #0065FC 5px solid;
+    color: #0065FC;
+
+}
+
+/*************************************/
+
+
+.menu_de_nav ul li a:hover{
+    color: #0065FC;
+    border-top: #0065FC 5px solid;
+}/*fin*/
+
+/***fin Header***/
+
+
+/***********section principale*************/
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 0px 50px;
+    gap: 35px;
+}
+
+/**************Partie 2********/
+/****** Hebergements And Populaires ***********/
+
+.hebergements-and-populaires{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+.hebergements-and-populaires .card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -71,10 +150,55 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
+
+/*********hebergement*******/
+
+.hebergements{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
+
+.hebergements_cards{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 18% 18% 18%;
+    gap: 20px;
+}
+
+.hebergements .card img{
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements_title h2{
+    font-family: 'Raleway';
+    font-Weight : bold;
+    font-size:22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -120,6 +244,90 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
+
+/***********Activites*********************/
+.activites{
+    width:100%;
+}
+.contain_activites{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.activites_cards{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 460px;
+    justify-content: space-between;
+    gap:4px;
+}
+
+.activites_cards .card{
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.activites_cards .card img{
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites_cards .card .description .card-title{
+    Font-family: 'Raleway';
+    font-Weight : bold;
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+}
+
+.activites_cards .card .description{
+    width: 100%;
+    height: 60px;
+   
+}
+
+
+
+
+/***********footer*****************/
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #F2F2F2;
+    gap: 350px;
+}
+
+footer .elt_title{
+    font-size: 19px;
+    font-family: 'Raleway';
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 35px;
+
+}
+
+.container .elt_container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
 
 
 
