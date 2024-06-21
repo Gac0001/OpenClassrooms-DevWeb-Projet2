@@ -303,9 +303,8 @@ main{
 footer{
     display: flex;
     width: 100%;
-    height: 200px;
     background-color: #F2F2F2;
-    gap: 350px;
+    justify-content: space-between;
 }
 
 footer .elt_title{
@@ -316,7 +315,7 @@ footer .elt_title{
 footer .container{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding: 20px 70px 20px 20px;
     gap: 35px;
 
 }
