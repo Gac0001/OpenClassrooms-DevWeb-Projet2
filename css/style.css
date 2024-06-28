@@ -65,6 +65,7 @@ a {
 header{
     display:flex;
     justify-content: space-between;
+
 }/*fin*/
 
 /*bloc de logo*/
@@ -88,31 +89,20 @@ header{
 header ul{
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
     list-style: none;
-    padding: 10px 0px 10px 0px;
-}
-
-header ul li{
-    display: flex;
-    flex-direction: row;
-    height: auto;
     
 }
 
-header ul li a:hover{
+
+
+header nav a:hover{
     border-top: #0065FC 5px solid;
     color: #0065FC;
+    padding-top: 19px;
 
 }
 
-/*************************************/
-
-
-.menu_de_nav ul li a:hover{
-    color: #0065FC;
-    border-top: #0065FC 5px solid;
-}/*fin*/
 
 /***fin Header***/
 
@@ -127,6 +117,53 @@ main{
 }
 
 /**************Partie 2********/
+
+/**********info-group***********/
+.info_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search-bar{
+    display: flex;
+    width: 35%;
+    height: 49px;
+}
+.search-bar .localisation{
+    display: flex;
+    width: 100%;
+}
+.localisation .imageMarseille{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    height: 49px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+.description_de_la_localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+}
+.boutonRecheche button{
+    background-color: #0065FC;
+    width: 190%;
+    height: 49px;
+    border-radius: 0px 10px 10px 0px;
+    color: #FFFFFF;
+    font-family: "Raleway";
+    font-size: 18px;
+    text-align: center;
+
+
+}
+
+
+
 /****** Hebergements And Populaires ***********/
 
 .hebergements-and-populaires{
@@ -157,15 +194,17 @@ main{
    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
 }
 
 .hebergements_cards{
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    grid-template-rows: 18% 18% 18%;
     gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .hebergements .card img{
@@ -175,10 +214,22 @@ main{
     border-top-right-radius: 20px;
 }
 
+.hebergements .card .card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 0% 2% 2%;
+}
+
 .hebergements_title h2{
     font-family: 'Raleway';
     font-Weight : bold;
     font-size:22px;
+    display: flex;
+}
+
+.hebergements_cards .card .card-content .description{
+    font-family: 'Raleway';
+
 }
 
 
@@ -285,13 +336,15 @@ main{
 .activites_cards .card .description .card-title{
     Font-family: 'Raleway';
     font-Weight : bold;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 20px 5px 20px;
+    display: flex;
 }
 
 .activites_cards .card .description{
     width: 100%;
     height: 60px;
+    display: flex;
    
 }
 
@@ -315,15 +368,14 @@ footer .elt_title{
 footer .container{
     display: flex;
     flex-direction: column;
-    padding: 20px 70px 20px 20px;
-    gap: 35px;
+    padding: 10px 90px 20px 20px;
 
 }
 
 .container .elt_container{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 
