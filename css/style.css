@@ -678,10 +678,13 @@ footer .container {
 
 
     .info_group {
-        padding: 0 10px 0 10px;
-        gap: 40px;
+        padding: 0 22px 0 22px;
+        gap: 28px;
     }
 
+    .headline{
+        gap: 7px;
+    }
    
     .headline h2 {
         font-size: 20px;
@@ -741,6 +744,7 @@ footer .container {
         display: grid;
         grid-template-columns: 48% 48%;
         height: 90px;
+        row-gap: 13px
         
     }
 
@@ -748,10 +752,32 @@ footer .container {
         padding: 0 10% 0 10%;
 
     }
+    .filtre .fa-solid{
+        font-size: 18px;
+    }
+    .filtre h3{
+        font-size: 12px;
+        font-weight: bold;
+    }
 
     .info-bar {
         font-size: 14px;
+        gap: 10px;
     }
+    .info-bar .fa-solid{
+        font-size: 9px;
+        padding: 2px;
+    }
+
+    .info-bar div{
+        height: 15px;
+    }
+
+    .info-bar p{
+        font-size: 13px;
+    }
+
+
 
 
 
@@ -776,7 +802,9 @@ footer .container {
 
 
 
-
+    .populaires{
+        margin-top: 30px;
+    }
     .populaires-cards a {
         width: 100%;
     }
